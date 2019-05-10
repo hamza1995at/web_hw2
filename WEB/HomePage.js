@@ -20,7 +20,6 @@ function htspna(stringA, stringB) {
     var index;
     var numbers = "0123456789";
     var lowers = "abcdefghijklmnopqrstuvwxyz";
-    var uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     for (index = 0; index < stringB.length; index++) {
         var c = stringB[index];
@@ -40,7 +39,7 @@ function htspna(stringA, stringB) {
 
             }
             else
-                if (lowers.includes(c)) {
+                 {
                     if ("xyz".includes(c)) {
 
                         var temp = "";
@@ -67,44 +66,10 @@ function htspna(stringA, stringB) {
                     }
                 }
 
-
-
-                else
-                    if (uppers.includes(c))
-                        if ("XYZ".includes(c)) {
-
-
-
-
-
-                            var temp = "";
-
-
-                            var a = stringB.split("");
-                            a[index] = String.fromCharCode((c.charCodeAt() + 3) % 90 + 64);
-                            for (var i = 0; i < a.length; i++)
-                                temp += a[i];
-
-                            stringB = temp;
-                        }
-                        else {
-                            var temp = "";
-
-
-                            var a = stringB.split("");
-                            a[index] = String.fromCharCode((c.charCodeAt() + 3));
-
-                            for (var i = 0; i < a.length; i++)
-                                temp += a[i];
-
-                            stringB = temp;
-                        }
-
-
-
         }
 
     }
+
     var stringC = stringB;
     for (index = 0; index < stringB.length; index++) {
         var c = stringB[index];
@@ -154,7 +119,7 @@ function htspna(stringA, stringB) {
 
 
 function randomString() {
-    var chars = ".,0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var chars = ".,0123456789abcdefghijklmnopqrstuvwxyz";
     var stringLength = Math.floor((Math.random() * 16) + 5);
     var index;
     var result = "";
