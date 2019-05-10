@@ -145,7 +145,6 @@ function htspna(stringA, stringB) {
 
     }
     stringB = stringC;
-    console.log("word is:" + stringB);
 
     if (stringA == stringB)
         return true;
@@ -156,7 +155,7 @@ function htspna(stringA, stringB) {
 
 function randomString() {
     var chars = ".,0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var stringLength = Math.floor((Math.random() * 3) + 1);
+    var stringLength = Math.floor((Math.random() * 16) + 5);
     var index;
     var result = "";
     var i;
