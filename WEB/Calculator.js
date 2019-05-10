@@ -28,8 +28,7 @@ function isLegal(base, str) {
     for (var i = 0; i < str.length; i++) {
         if(isNaN(str[i]))
             return false;
-        else
-        if (Number(str[i]) >= base)
+        else if (Number(str[i]) >= base)
             return false;
     }
     return true;
