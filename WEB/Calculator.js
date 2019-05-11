@@ -1,7 +1,6 @@
 window.addEventListener("load", function () {
     var initial_base = 10;
     var change_base = 10;
-    var flag = false;
     var number = NaN;
 
     document.querySelector(".selector").addEventListener("change", function () {

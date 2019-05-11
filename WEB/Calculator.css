@@ -3,6 +3,13 @@ font-family: 'Times New Roman', Times, serif;
 
 }
 
+.input2 , .selector {
+    font-size:25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
 .msgert {
     display: block;
     margin-left: auto;
