@@ -3,6 +3,18 @@ font-family: 'Times New Roman', Times, serif;
 
 }
 
+.kaka {
+    font-size:50px;
+    text-shadow: 2px 2px #424242;
+}
+
+.button, .input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:35px;
+    }
+
 .msgert {
     display: block;
     margin-left: auto;
